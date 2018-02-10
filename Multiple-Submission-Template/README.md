@@ -14,9 +14,7 @@ You can add pdf includes and other stuff in the /pdf directory and use them in y
 
 
 
-
-
-###### I dont know how to do Latex:
+###### Latex resources:
 Don't worry. Check out these guides and resources:
 [ShareLatex.com](https://www.sharelatex.com/learn)
 [tex.stackexchange.com](https://tex.stackexchange.com)
