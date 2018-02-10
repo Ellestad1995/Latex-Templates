@@ -1,0 +1,32 @@
+% This is the root file of your thesis: Main.tex
+% A line starting with % is a comment. In some cases, I have included a command preceded by a %. You may activate the command by removing the %.
+
+%%===========================================
+\documentclass[a4paper,12pt]{report}
+\usepackage{usepackage}
+%%===========================================
+%Write the various parts of your thesis as separate files and include them into the main file by the command \include{name of included file}. When you compile the LaTeX file, you may choose which subfiles to include by the command
+
+%\includeonly{chapter01,chapter02}
+
+%%============================================
+\begin{document}
+\include{forside} % This is the titlepage
+\setcounter{page}{0}
+\pagenumbering{arabic}
+\renewcommand{\contentsname}{Innhold}
+\tableofcontents
+\setcounter{page}{0}
+\pagenumbering{arabic}
+%=============================================
+\include{Delinnlevering01}
+\include{Delinnlevering02}
+\include{Delinnlevering03}
+%%============================================
+%%\bibliographystyle{unsrt}
+\bibliographystyle{IEEEtran}
+%\addcontentsline{toc}{chapter}{\bibname}
+\renewcommand\bibname{Kilder}
+\bibliography{Kilder} 
+%%=============================================
+\end{document}
